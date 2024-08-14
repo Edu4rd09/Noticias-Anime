@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilo2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo"><a href="#">Anime Noticias</a></div>
+        <ul class="links">
+            <li class="list_item"><a href="./index.html" class="link">Inicio</a></li>
+            <li class="list_item"><a href="/buscador.html" class="link">Buscar</a></li>
+            <li class="list_item"><a href="#" class="link">Nosotros</a></li>
+
+        </ul>
+        <a href= class="action_btn"></a>
+        <div class="toggle_btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu ">
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="/buscador.html">Noticias</a></li>
+        <li><a href="about">Nosotros</a></li>
+
+    </div>
+    </header>
+    <main>
+    </main>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+
+<!-- Carrusel -->
+    <div class="container">
+        <div id="slide">
+            <!-- Las últimas noticias de anime en español se mostrarán aquí -->
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+            <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    <script src="./Js/carrusel.js"></script>
+
+
+
+<!-- Card Carrusel -->
+    <section>
+       
+        <div class="col-11">
+            <div class="section-title">
+                <h4 class="m-0 text-uppercase font-weight-bold">Noticias del Mes Pasado</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="container2">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper" id="card-wrapper">
+                    <!-- Las últimas noticias de anime en español se mostrarán aquí -->
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- JavaScript for NewsAPI Integration -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./Js/CardCarrusel.js"></script>
+
+
+
+<!-- Card -->
+    <section>
+       
+        <div class="col-12">
+            <div class="section-title">
+                <h4 class="m-0 text-uppercase font-weight-bold">Noticias Crunchyroll</h4>
+            </div>
+        </div>
+       
+    </section>
+
+
+    <section class="post-list">
+        <div class="content3" id="news-container">
+            <!-- Las últimas noticias de anime en español se mostrarán aquí -->
+        </div>
+    </section>
+    <script src="./Js/Card.js"></script>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>Anime Noticias</h3>
+            <p>Las mejor paguina para la informacion del mundo del anime </p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 codeOpacity. designed by <span>nethunt</span></p>
+        </div>
+    </footer>
+</body>
+</html>
