@@ -1,5 +1,5 @@
 # Noticias-Anime
-#Capturas
+#CAPTURAS
 <p align="center">
  <img src="https://github.com/Edu4rd09/Noticias-Anime/blob/main/captura/Captura%201.PNG" width="300">
  <img src="https://github.com/Edu4rd09/Noticias-Anime/blob/main/captura/Captura%202.PNG" width="300">
